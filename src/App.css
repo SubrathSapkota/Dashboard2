@@ -1,38 +1,129 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(22, 10, 28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  height: 85vh;
+  width: 90vw;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containerRight {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoDesignMain {
+  display: flex;
+  align-items: center;
+}
+
+.logodesign {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(253, 186, 128, 0.897);
+  border-radius: 10px;
+}
+
+.logo {
+  margin-left: -27px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.logoImage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.listItems {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icons {
+  font-size: 20px !important;
+}
+
+.exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* container left  */
+
+.containerLeft {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(238, 217, 189);
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.containerLeftTop {
+  height: 350px;
+  width: 95%;
+  display: flex;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerLeftTopLeft {
+  height: 100%;
+  width: 50%;
+  border-radius: 50px;
+  background-color: rgba(58, 57, 57, 0.681);
+}
+.containerLeftTopRight {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgba(253, 186, 128, 0.739);
+}
+
+.containerLeftBottom {
+  height: 250px;
+  width: 95%;
+  border-radius: 50px;
+  background-color: rgba(253, 186, 128, 0.739);
 }
